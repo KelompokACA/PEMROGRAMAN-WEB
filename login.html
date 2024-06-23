@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url('bg1.jpg'); 
+            background-size: cover;
+        }        
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .card-header {
+            background-color: #000000;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #000000;
+            border-color: #000000;
+        }
+        .btn-primary:hover {
+            background-color: #2c2f31;
+            border-color: #3a3638;
+        }
+        .btn-primary:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="card">
+                    <div class="card-header text-center"> 
+                        <h4>Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="login.php">
+                            <div class="form-group">
+                                <label for="username">Username: </label>
+                                <input type="text" class="form-control" id="username" name="username" required> 
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" required> 
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+                        <p class="mt-3 text-center">Belum punya akun? <a href="daftar.html">Daftar di sini</a>.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+   
+</body>
+<script>
+    function login() {
+    // logika untuk memeriksa username dan password
+    // ...
+
+    // jika berhasil login, alihkan pengguna ke halaman beranda.html 
+    window.location.href= "beranda.html";
+    }
+    </script>
+
+</html>
