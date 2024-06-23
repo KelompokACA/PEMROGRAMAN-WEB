@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.8">
+    <title>Pemesanan Tiket Konser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggoyReixCbQv3X1pma34MD+dH/1fQ784/j6cY/1JTQUOhcwr7x93vRxXT2ZW1T" crossorigin="anonymous">
+    <style>
+        /* Gaya umum */
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration:none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        P{
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        /* Gaya header dan footer */
+
+        header {
+            background-color:#4d0404;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #f8f9fa; 
+            color: #6c7576;
+            padding: 10px 0;
+        }
+
+        /* Gaya tampilan tiket */
+        .card{
+            border:none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,1);
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,2);
+        }
+        .card-ing-top {
+            border-radius: 8px 8px 0 0;
+        }
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 1rem;
+        }
+        .btn-primary {
+            background-color: #0b0b0b;
+            border-color: #087bff;
+        }
+        .btn-primary:hover {
+            background-color: #4d0404;
+            border-color: #005cbf;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-1g navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TiketKonser.id</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tentang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<header class="text-center">
+    <h1>Halaman Pemesanan</h1>
+</header>
+
+<main>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="D19.jpg" class="card-img-top" alt="Konser A"> 
+                            <div class="card-body">
+                                <h3 class="card-title">Konser DEWA 19</h3>
+                                <p class="card-text">Tanggal: 12 Juni 2024</p>
+                                <p class="card-text">Lokasi: Stadion Merdeka</p>
+                                <div class="text-center mt-4">
+                                    <a href="pembelian.html" class="btn btn-primary btn-lg">Beli Tiket</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 mb-4">
+                                <div class="card">
+                                <img src="VIRZHA.jpg" class="card-img-top" alt="Konser B">
+                                <div class="card-body">
+                                <h3 class="card-title">Konser VIRZHA</h3>
+                                <p class="card-text">Tanggal: 12 Juni 2024</p>
+                                <p class="card-text">Lokasi: Stadion JIS</p>
+                                <div class="text-center mt-4">
+                                    <a href="pembelian.html" class="btn btn-primary btn-lg">Beli Tiket</a> </div>
+                                  </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <Footer class="text-center">
+        <p>Hak cipta &copy; Kelompok ACA: Pemesanan Tiket Konser 2024</p>
+    </footer>
+    <script src="https://code.iquery.com/jquery=3.3.1%">
+    </script>
+</body> 
+</html>
